@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { BrowserRouter } from 'react-router-dom'
-import Header from './components/header'
+import Header from './components/shared/header'
 const queryClient = new QueryClient();
 
 function App() {

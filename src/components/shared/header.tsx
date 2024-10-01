@@ -9,14 +9,14 @@ const Header = () => {
             <nav className="flex items-center justify-between p-4" aria-label="Nominations">
                 <a href="/" aria-label="Go to home page" className="-m-1.5 p-1.5">
                     <img
-                        className="hidden md:flex"
+                        className="hidden tablet:flex"
                         src="/desktop-logo.png"
                         alt="Desktop Logo"
                         width="238.19"
                         height="37.24"
                     />
                     <img
-                        className="flex md:hidden"
+                        className="flex tablet:hidden"
                         src="/mobile-logo.png"
                         alt="Mobile Logo"
                         width="40"
