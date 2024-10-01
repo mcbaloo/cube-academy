@@ -1,4 +1,4 @@
-import Button from "./shared/button";
+import Button from "../components/shared/button";
 
 const Home = () => {
     return (
