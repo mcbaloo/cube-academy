@@ -1,7 +1,7 @@
 'use client';
 
 import { Dispatch, SetStateAction } from 'react';
-import { UseFormRegister, FieldErrors, UseFormReset } from 'react-hook-form';
+import { UseFormRegister, FieldErrors} from 'react-hook-form';
 import { useCubeAcademyRetrieveNomineeList } from '../../queries/cubeComponents';
 import { FormInputs } from '../../validators/nomination-validator';
 import Overview from './overview';
