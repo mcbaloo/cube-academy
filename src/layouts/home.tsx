@@ -25,7 +25,7 @@ const Home = () => {
                     think deserves this months title.
                 </div>
                 <Button
-                    to="/select-nominee"
+                    to="/create-nomination"
                     className="justify-center tablet:shadow-none font-bold m-5 w-full h-[50px] tablet:w-[327px]"
                 >
                     GET STARTED

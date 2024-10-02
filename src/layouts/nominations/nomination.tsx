@@ -8,8 +8,6 @@ import { RxPencil1 } from 'react-icons/rx';
 import Header from '../../components/shared/header';
 import EmptyState from './emptystate';
 import Modal from '../../components/shared/modal';
-import Button from '../../components/shared/button';
-
 type NominationDetails = {
   id: string;
   name: string;

@@ -10,6 +10,7 @@ type CustomButtonProps = {
 export enum ButtonStyle {
   solid = 'solid',
   outline = 'outline',
+  texttransperent = 'textblack'
 }
 
 const resolveButtonStyles = ({
@@ -22,6 +23,7 @@ const resolveButtonStyles = ({
   const baseClasses = 'inline-flex items-center justify-center text-sm leading-6';
 
   const styleMapping = {
+    [ButtonStyle.texttransperent] : `border-black text-black hover:border-pink`,
     [ButtonStyle.solid]: `shadow-lg text-white bg-black hover:bg-white hover:border hover:border-black hover:text-black`,
     [ButtonStyle.outline]: `border border-black text-black hover:border-pink hover:bg-gray-50 shadow-md`,
   };
@@ -29,6 +31,7 @@ const resolveButtonStyles = ({
   const disabledMapping = {
     [ButtonStyle.solid]: 'shadow-none text-white bg-gray-400 cursor-not-allowed',
     [ButtonStyle.outline]: 'border-gray-400 text-gray-400 cursor-not-allowed',
+    [ButtonStyle.texttransperent] : `text-black`,
   };
 
   const appliedStyles = isDisabled ? disabledMapping[type] : styleMapping[type];

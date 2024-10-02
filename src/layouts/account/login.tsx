@@ -1,6 +1,6 @@
 'use client';
 import { FieldErrors, useForm } from "react-hook-form";
-import { LoginInputs, loginSchema } from "../../validators/loginValidator";
+import { LoginInputs, loginSchema } from "../../validators/login-validator";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { PiSpinner } from "react-icons/pi";
 import { useCubeAcademyLogin } from '../../queries/cubeComponents';
