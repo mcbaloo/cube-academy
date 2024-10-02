@@ -4,7 +4,9 @@
 body {
   width: 100vw;
   min-height: 100vh;
+  overflow-x: hidden;
+  padding-right: 10px;
   display: flex;
   flex-direction: column;
-  background: url("/background-image.png"), linear-gradient(81.37deg, #A0FF1F 13.17%, #00ED71 86.83%);
+  background: url("/background-image.png"), linear-gradient(82deg, #A0FF1F 13%, #00ED71 87%);
 }
