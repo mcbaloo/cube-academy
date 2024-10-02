@@ -1,50 +1,43 @@
-# React + TypeScript + Vite
+# A cube nomination web application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project was bootstrapped with [`Vite react-ts template`](https://vite.dev/guide/)
 
-Currently, two official plugins are available:
+# Technologies
+- Language: Typescript 
+- Framework: React.js Vite
+- Styling: Tailwind.css 
+- Forms: React Hook Form with yup validation
+- REST requests: Tanstack Query (useQuery)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Getting Started
 
-## Expanding the ESLint configuration
+Install dependencies and run the development server with the command below
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+npm install
+npm run dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Open [http://localhost:5173/](http://localhost:5173/) to view the application.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+# Extra Features
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+-   Login flow to allow registered users sign in to create and view nominations.
+
+# Challenges
+
+My major challenge is that i had to do a lot of reading and pratice to be able to use some of the technologies and framework indicated in the assessment desctiption. This solved down my implementation and affected some parts of the appliction which i felt could be handled differently and elegantly.
+
+
+# What i would have done differently
+
+-Allow users to register
+- Modularize and break down pages into their smallest components.
+- Abstract styling better
+- Write end to end unit test
+
+**The application can be accessed [here](https://cube-academy.netlify.app/)**
+
+To login, use can use
+- username : balogun@code-academy
+- password : balogun1234
