@@ -287,6 +287,7 @@ export const useCubeAcademyGetAllNominations = <TData = Responses.Nominations,>(
   >,
 ) => {
   const { fetcherOptions, queryOptions, queryKeyFn } = useCubeContext(options);
+
   return reactQuery.useQuery<
     Responses.Nominations,
     CubeAcademyGetAllNominationsError,

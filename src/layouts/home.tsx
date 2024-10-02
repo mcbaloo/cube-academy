@@ -1,15 +1,19 @@
 import Button from "../components/shared/button";
+import Header from "../components/shared/header";
 
 const Home = () => {
     return (
-        <div className='max-w-screen-tablet bg-white'>
+    
+      <><Header />
+    <main className='flex grow flex-col items-center'>   
+      <div className='max-w-screen-tablet bg-white'>
+
             <img
                 className='w-full'
                 width={800}
                 height={305}
                 src='/hero.png'
-                alt='Team members'
-            />
+                alt='Team members' />
             <div className='bg-white pt-3 pb-11 px-4 tablet:px-32 text-center'>
                 <h1 className='font-bold text-3xl mt-6 mb-2'>
                     CUBE OF THE MONTH NOMINATIONS
@@ -21,14 +25,16 @@ const Home = () => {
                     think deserves this months title.
                 </div>
                 <Button
-            to="/select-nominee" 
-            className="justify-center tablet:shadow-none font-bold m-5 w-full h-[50px] tablet:w-[327px]"
-            >
-                GET STARTED
+                    to="/select-nominee"
+                    className="justify-center tablet:shadow-none font-bold m-5 w-full h-[50px] tablet:w-[327px]"
+                >
+                    GET STARTED
                 </Button>
 
             </div>
         </div>
+        </main>
+        </>
     );
 };
 

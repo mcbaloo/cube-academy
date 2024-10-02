@@ -1,9 +1,19 @@
-import { useEffect } from 'react';
-const Header = () => {
-    const authToken = localStorage.getItem('token');
-    useEffect(() => {
-    }, [authToken]);
+'use client';
+import { useCubeAcademyGetAllNominations } from '../../queries/cubeComponents';
+import { useQueryClient } from '@tanstack/react-query';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
+const Header = () => {
+    const [authToken] = useState<string | null>(localStorage.getItem('token'));
+    const navigate = useNavigate();
+    const { data } = authToken ? useCubeAcademyGetAllNominations({}) : { data: null };
+    const queryClient = useQueryClient();
+    const handleLogout = () => {
+        localStorage.removeItem('token');
+        queryClient.clear();
+       navigate('/login')
+    };
     return (
         <header className="bg-black mb-12">
             <nav className="flex items-center justify-between p-4" aria-label="Nominations">
@@ -29,14 +39,18 @@ const Header = () => {
                         <button
                             type="button"
                             className="leading-[30px] text-white font-anonymous mr-6"
-                           
+                            onClick={handleLogout}
                         >
                             LOG OUT
                         </button>
                     ) : (
-                        <a href="/account/login" aria-label="Login">
-                            Login
-                        </a>
+                        <button
+                            type="button"
+                            className="leading-[30px] text-white font-anonymous mr-6"
+                           
+                        >
+                            LOGIN
+                        </button>
                     )}
                     <button
                         aria-label="Your nominations"
@@ -44,7 +58,7 @@ const Header = () => {
                         className="leading-[30px] text-white"
                     >
                         <span className="flex flex-1 justify-end font-anonymous">
-                            Your Nominations 
+                        {`Your Nominations (${data?.data?.length ?? 0})`}
                         </span>
                     </button>
                 </div>

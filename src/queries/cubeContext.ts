@@ -1,5 +1,6 @@
 import type { QueryKey, UseQueryOptions } from "@tanstack/react-query";
 import { QueryOperation } from "./cubeComponents";
+import useToken from "../hooks/token";
 
 export type CubeContext = {
   fetcherOptions: {
@@ -41,11 +42,19 @@ export function useCubeContext<
     "queryKey" | "queryFn"
   >,
 ): CubeContext {
-  return {
-    fetcherOptions: {},
-    queryOptions: {},
-    queryKeyFn,
-  };
+  const { authToken } = useToken();
+
+    return {
+        fetcherOptions: {
+            headers: {
+                authorization: authToken ? `Bearer ${authToken}` : undefined,
+            },
+        },
+        queryOptions: {
+            enabled: authToken !== null,
+        },
+        queryKeyFn,
+    };
 }
 
 export const queryKeyFn = (operation: QueryOperation) => {

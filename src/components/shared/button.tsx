@@ -5,7 +5,7 @@ type CustomButtonProps = {
   styleType?: ButtonStyle;
   disabled?: boolean;
 } & LinkProps &
-  Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, 'ref'>;
+  Omit<React.HTMLProps<HTMLAnchorElement>, 'ref'>;
 
 export enum ButtonStyle {
   solid = 'solid',
