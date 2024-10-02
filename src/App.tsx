@@ -5,6 +5,7 @@ import Footer from './components/shared/footer'
 import Header from './components/shared/header'
 import Login from './layouts/account/login'
 import Home from './layouts/home'
+import Nomination from './layouts/nominations/nomination'
 const queryClient = new QueryClient();
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
     <BrowserRouter>  
     
       <Routes>
-            
+           <Route path="/nominations" element={<Nomination />} />
             <Route path="/login" element={<Login />} />
             <Route path="/" element={<Home />} />
             </Routes>             

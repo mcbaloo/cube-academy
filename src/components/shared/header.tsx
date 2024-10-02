@@ -52,7 +52,8 @@ const Header = () => {
                             LOGIN
                         </button>
                     )}
-                    <button
+                    <a
+                    href='/nominations'
                         aria-label="Your nominations"
                         type="button"
                         className="leading-[30px] text-white"
@@ -60,7 +61,7 @@ const Header = () => {
                         <span className="flex flex-1 justify-end font-anonymous">
                         {`Your Nominations (${data?.data?.length ?? 0})`}
                         </span>
-                    </button>
+                    </a>
                 </div>
             </nav>
         </header>
