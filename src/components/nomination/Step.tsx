@@ -7,7 +7,7 @@ import { FormInputs } from '../../validators/nomination-validator';
 import Overview from './overview';
 import Reason from './reason';
 import ProcessFeedback from './progress-feedback';
-import SelectionTab from './Selection';
+import SelectionTab from './selection';
 
 export type SelectOptionType = {
     id?: string;

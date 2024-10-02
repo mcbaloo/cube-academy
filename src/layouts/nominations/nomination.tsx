@@ -177,7 +177,7 @@ const Nomination = () => {
                             </button>
                            ) : null}
                            {id ? (
-                            <Link to={`/nominee-selection?id=${id}`} aria-label="Edit nomination">
+                            <Link to={`/create-nomination?id=${id}`} aria-label="Edit nomination">
                               <RxPencil1 className="h-10 w-10 text-black p-2" />
                             </Link>
                             ) : null}
