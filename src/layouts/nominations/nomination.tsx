@@ -200,7 +200,7 @@ const Nomination = () => {
                             <p className='text-error font-anonymous mb-6 pl-6'>
                                 {deleteError}
                             </p>
-                            <div className=''>
+                            <div className='mx-4'>
                                 <button
                                     
                                     className='border-2 border-black text-black hover:border-pink hover:bg-gray-50 hover:shadow-[0px_1px_10px_0px_#1A1A1914] w-full mb-4 py-2'
