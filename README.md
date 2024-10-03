@@ -35,7 +35,7 @@ My major challenge is that i had to do a lot of reading and pratice to be able t
 - Modularize and break down pages into their smallest components.
 - Abstract styling better
 - Write end to end unit test
-
+- State Management
 **The application can be accessed [here](https://cube-academy.netlify.app/)**
 
 To login, use can use
