@@ -44,13 +44,14 @@ const Header = () => {
                             LOG OUT
                         </button>
                     ) : (
-                        <button
+                        <a
+                         href='/login'
                             type="button"
                             className="leading-[30px] text-white font-anonymous mr-6"
                            
                         >
                             LOGIN
-                        </button>
+                        </a>
                     )}
                     <a
                     href='/nominations'
