@@ -36,7 +36,10 @@ My major challenge is that i had to do a lot of reading and pratice to be able t
 - Abstract styling better
 - Write end to end unit test
 - State Management
-**The application can be accessed [here](https://cube-academy.netlify.app/)**
+
+# How to Access the application
+
+- The application can be accessed [here](https://cube-academy.netlify.app/)**
 
 To login, use can use
 - username : balogun@code-academy
