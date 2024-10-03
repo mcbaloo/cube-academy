@@ -26,16 +26,17 @@ Open [http://localhost:5173/](http://localhost:5173/) to view the application.
 
 # Challenges
 
-My major challenge is that i had to do a lot of reading and pratice to be able to use some of the technologies and framework indicated in the assessment desctiption. This solved down my implementation and affected some parts of the appliction which i felt could be handled differently and elegantly.
+- My major challenge is that i had to do a lot of reading and pratice to be able to use some of the technologies and framework indicated in the assessment desctiption. This solved down my implementation and affected some parts of the appliction which i felt could be handled differently and elegantly. Additionally, the complete mobile view of all the pages was not implemented.
 
 
 # What i would have done differently
 
--Allow users to register
+- Allow users to register
 - Modularize and break down pages into their smallest components.
 - Abstract styling better
 - Write end to end unit test
 - State Management
+- More mobile responsiveness
 
 # How to Access the application
 
